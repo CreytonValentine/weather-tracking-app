@@ -10,7 +10,16 @@ var displayCity = function(city, cityName) {
     console.log(cityName);
 
     for (var i = 0; i < city.length; i++) {
-        var 
+        var cityDisplay = city[i];
+
+        var cityEl = document.createElement("div");
+        cityEl.classList = "list-item";
+
+        var cityElTitle = document.createElement("span");
+        cityElTitle.textContent = cityDisplay;
+
+        cityEl.appendChild(CityElTitle);
+        nameContainerEl.appendChild(cityElTitle);
     }
 }
 
