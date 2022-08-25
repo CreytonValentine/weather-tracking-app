@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Tracking App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body class="flex-row">
+
+    <header class="hero container-fluid">
+        <h1 class="website-title">Weather tracker</h1>
+        <p>Enter city name below to view current and future weather conditions</p>
+    </header>
+
+    <main class="flex-row justify-space-between">
+        <div class="col-4">
+            <div class="form container">
+                <h3 class="form-header">Enter City</h3>
+                <form id="user-form" class="form-body">
+                    <input name="city-name" id="city-name" type="text" class="form-input" />
+                    <button type="submit" class="btn">Click when ready</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-8">
+            <h3>Current weather in: <span id="city-name-search"></span></h3>
+            <div id="city-weather" class="list-group"></div>
+        </div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    
+</body>
+</html>
+
